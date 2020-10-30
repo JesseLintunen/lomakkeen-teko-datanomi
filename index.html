@@ -1,48 +1,99 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>JavaScript Form Validation using a sample registration form</title>
-<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
-<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
-<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
-<script src="sample-registration-form-validation.js"></script>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rekisteröintilomake</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="main.js"></script>
 </head>
 <body onload="document.registration.userid.focus();">
-<h1>Rekisteröitymislomake</h1>
-Siirry kentästä toiseen tab-näppäimellä
-<form name='registration' onSubmit="return formValidation();">
-<ul>
-<li><label for="userid">KäyttäjäID:</label></li>
-<li><input type="text" name="userid" size="12" /></li>
-<li><label for="passid">Salasana:</label></li>
-<li><input type="password" name="passid" size="12" /></li>
-<li><label for="username">Nimi:</label></li>
-<li><input type="text" name="username" size="50" /></li>
-<li><label for="address">Osoite:</label></li>
-<li><input type="text" name="address" size="50" /></li>
-<li><label for="country">Maa:</label></li>
-<li><select name="country">
-<option selected="" value="Default">(Valitse Maa)</option>
-<option value="AF">Suomi</option>
-<option value="AL">Ruotsi</option>
-<option value="DZ">Viro</option>
-<option value="AS">Venäjä</option>
-<option value="AD">Norja</option>
-</select></li>
-<li><label for="zip">Postinumero:</label></li>
-<li><input type="text" name="zip" /></li>
-<li><label for="email">Sähköposti:</label></li>
-<li><input type="text" name="email" size="50" /></li>
-<li><label id="gender">Sukupuoli:</label></li>
-<li><input type="radio" name="msex" value="Male" /><span>Mies</span></li>
-<li><input type="radio" name="fsex" value="Female" /><span>Nainen</span></li>
-<li><label>Kieli:</label></li>
-<li><input type="checkbox" name="en" value="en" checked /><span>Suomi</span></li>
-<li><input type="checkbox" name="nonen" value="noen" /><span>Joku muu</span></li>
-<li><label for="desc">Lisätietoja:</label></li>
-<li><textarea name="desc" id="desc"></textarea></li>
-<li><input type="submit" name="submit" value="Submit" /></li>
-</ul>
-</form>
+    <h1>Rekisteröitymislomake</h1>
+    <p>Siirry kentästä toiseen tab-näppäimellä</p>
+
+    <form name="Rekisteröityminen" onSubmit="palauta lomakkeenvalidointi();">
+        <ul>
+            <li>
+                <label for="userid">KäyttäjäID:</label>
+                <input type="text" name="userid" size="12" />
+            </li>
+            <li>
+                <label for="passid">Salasana:</label>
+                <input type="password" name="passid" size="12" />
+            </li>
+
+            <li><label for="username">Nimi:</label></li>
+
+            <li><input type="text" name="username" size="50" /></li>
+
+            <li><label for="address">Osoite:</label></li>
+
+            <li><input type="text" name="address" size="50" /></li>
+
+            <li>
+                <label for="country">Maa:</label>
+                <select name="country">
+                    <option selected="" value="Default">(Valitse Maa)</option>
+                    <option value="AF">Suomi</option>
+                    <option value="AL">Ruotsi</option>
+                    <option value="DZ">Viro</option>
+                    <option value="AS">Venäjä</option>
+                    <option value="AD">Norja</option>
+                </select>
+            </li>
+
+            <li>
+                <label for="zip">Postinumero:</label>
+            </li>
+
+            <li>
+                <input type="text" name="zip" />
+            </li>
+
+            <li>
+                <label for="email">Sähköposti:</label>
+            </li>
+
+            <li>
+                <input type="text" name="email" size="50" />
+            </li>
+
+            <li>
+                <label id="gender">Sukupuoli:</label>
+            </li>
+
+            <li>
+                <input type="radio" name="msex" value="Male" /><span>Mies</span>
+            </li>
+
+            <li>
+                <input type="radio" name="fsex" value="Female" /><span>Nainen</span>
+            </li>
+
+            </li>
+            <label>Kieli:</label>
+            </li>
+
+            <li>
+                <input type="checkbox" name="en" value="en" checked /><span>Suomi</span>
+            </li>
+
+            <li>
+                <input type="checkbox" name="nonen" value="noen" /><span>Joku muu</span>
+            </li>
+
+            <li>
+                <label for="desc">Lisätietoja:</label>
+            </li>
+
+            <li>
+                <textarea name="desc" id="desc"></textarea>
+            </li>
+
+            <li>
+                <input type="submit" name="submit" value="Submit" />
+            </li>
+
+        </ul>
+    </form>
 </body>
 </html>
