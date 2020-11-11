@@ -34,7 +34,7 @@ function formValidation()
 
 function userid_validation(uid, minLength,maxLength) {
     
-var uid_len = uid.value.length;
+    var uid_len = uid.value.length;
     
     if (uid_len >= maxLength || uid_len < minLength) {
         alert("Käyttäjä ID ei pitäisi olla tyhjä / pituus välillä "+minLength+" to "+maxLength);
@@ -84,10 +84,18 @@ var letters = /^[0-9a-zA-Z]+$/;
 }
 }
 function countryselect(ucountry){
-    
+        
+        if (ucountry.value == "AF")
+        {
+            alert("olet kantasuomalainen jee")
+        }
+
+
         if(ucountry.value == "Default")
+        
 {
 alert('Valitse maasi listalta');
+
 ucountry.focus();
 return false;
         }
